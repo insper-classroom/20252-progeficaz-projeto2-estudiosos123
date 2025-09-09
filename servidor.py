@@ -1,11 +1,10 @@
 from flask import Flask, request
-import views
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return views.index()
+    return 'Servidor está rodando!'
 
 
 if __name__ == '__main__':
