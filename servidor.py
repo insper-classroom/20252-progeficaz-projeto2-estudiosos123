@@ -147,5 +147,5 @@ def listar_por_cidade(cidade):
     imoveis = [row_to_dict(r) for r in rows]
     return jsonify({"imoveis": imoveis}), 200
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True, port=5500)
